@@ -2,7 +2,6 @@ from unittest import case
 
 user_prompt = "Type 'add', 'show', 'remove' or 'exit': "
 
-to_dos = []
 while True:
     user_input = input(user_prompt).strip()
     match user_input:
@@ -13,8 +12,11 @@ while True:
         case "show":
             with open("to_do_items.txt", "r") as file:
                 to_do_list = file.readlines()
-            for index,item in enumerate(to_do_list):
-                print(f"{index+1}. {item.strip("\n")}")
+                if not to_do_list:
+                    print("Nothing to do, please add an item")
+                else:
+                    for index,item in enumerate(to_do_list):
+                        print(f"{index+1}. {item.strip("\n")}")
         case "remove":
             with open("to_do_items.txt", "r") as file:
                 to_do_list = file.readlines()
