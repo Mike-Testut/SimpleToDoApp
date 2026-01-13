@@ -1,4 +1,3 @@
-from unittest import case
 
 user_prompt = "Type 'add', 'show', 'remove' or 'exit': "
 
@@ -23,9 +22,13 @@ while True:
             for index,item in enumerate(to_do_list):
                 print(f"{index+1}. {item.strip("\n")}")
             item_to_delete = input("Which number do you want to remove?: ")
-            to_do_list.pop(int(item_to_delete)-1)
-            with open("to_do_items.txt", "w") as file:
-                file.writelines(to_do_list)
+            if 0 < int(item_to_delete) <= len(to_do_list):
+                to_do_list.pop(int(item_to_delete)-1)
+                with open("to_do_items.txt", "w") as file:
+                    file.writelines(to_do_list)
+                print("Item removed successfully")
+            else:
+                print("Item not in list")
         case "exit":
             print("Goodbye")
             break
