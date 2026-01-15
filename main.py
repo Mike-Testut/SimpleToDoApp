@@ -1,23 +1,25 @@
 
 user_prompt = "Type 'add'+ your to-do item, or type 'show', 'remove' or 'exit': "
+def retrieve_items():
+    with open("to_do_items.txt", "r") as file:
+        to_do_list = file.readlines()
+    return to_do_list
+
 
 while True:
     user_input = input(user_prompt).strip()
     if "add" in user_input:
-        # to_do = input("Enter to do item: ") +"\n"
         with open("to_do_items.txt", "a") as file:
             file.writelines(user_input[4:]+"\n")
     elif user_input == "show":
-        with open("to_do_items.txt", "r") as file:
-            to_do_list = file.readlines()
-            if not to_do_list:
-                print("Nothing to do, please add an item")
-            else:
-                for index,item in enumerate(to_do_list):
-                    print(f"{index+1}. {item.strip("\n")}")
+        to_do_list = retrieve_items()
+        if not to_do_list:
+            print("Nothing to do, please add an item")
+        else:
+            for index,item in enumerate(to_do_list):
+                print(f"{index+1}. {item.strip("\n")}")
     elif user_input == "remove":
-        with open("to_do_items.txt", "r") as file:
-            to_do_list = file.readlines()
+        to_do_list = retrieve_items()
         for index,item in enumerate(to_do_list):
             print(f"{index+1}. {item.strip("\n")}")
         item_to_delete = input("Which number do you want to remove?: ")
