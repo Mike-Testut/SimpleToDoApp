@@ -3,19 +3,23 @@ import FreeSimpleGUI as gui
 
 
 label = gui.Text("Add your to do item")
-input_box = gui.InputText()
+input_box = gui.InputText(key="input")
+list_box = gui.Listbox(f.retrieve_items())
 add_button = gui.Button("Add")
-
+list_box = gui.Listbox(f.retrieve_items(),key="todo_items",enable_events=True,size=(45,10))
 
 window = gui.Window("To Do App",
-                    layout=[[label], [input_box, add_button]],
+                    layout=[[label], [input_box, add_button],[list_box]],
                     font=("Helvetica", 16))
 
 while True:
     event, values = window.read()
+    print(event, values)
     match event:
         case "Add":
-            f.write_items("a",values[0] + "\n")
+            f.write_items("a",values['input'] + "\n")
 
+        case gui.WIN_CLOSED:
+            break
 
 window.close()
