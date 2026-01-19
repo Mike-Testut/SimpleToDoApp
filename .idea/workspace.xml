@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c966d51-cb87-42ae-bacb-6029b04d59ed" name="Changes" comment="implement add to do function to gui app">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1c966d51-cb87-42ae-bacb-6029b04d59ed" name="Changes" comment="Implement function to show to do list to user">
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to_do_items.txt" beforeDir="false" afterPath="$PROJECT_DIR$/to_do_items.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1767903091556</updated>
       <workItem from="1767903092559" duration="41449000" />
-      <workItem from="1768671421882" duration="15326000" />
+      <workItem from="1768671421882" duration="15851000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -232,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768860635128</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Implement function to show to do list to user">
+      <option name="closed" value="true" />
+      <created>1768863618024</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1768863618024</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +290,8 @@
     <MESSAGE value="restructure functions into separate module" />
     <MESSAGE value="start GUI component" />
     <MESSAGE value="implement add to do function to gui app" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement add to do function to gui app" />
+    <MESSAGE value="Implement function to show to do list to user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement function to show to do list to user" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ToDoApp$main.coverage" NAME="main Coverage Results" MODIFIED="1768595834146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

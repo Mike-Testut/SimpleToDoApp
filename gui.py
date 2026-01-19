@@ -18,7 +18,7 @@ while True:
     match event:
         case "Add":
             f.write_items("a",values['input'] + "\n")
-
+            window["todo_items"].update(f.retrieve_items())
         case gui.WIN_CLOSED:
             break
 
