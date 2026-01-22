@@ -1,8 +1,7 @@
-from contextlib import nullcontext
-
 import functions as f
 import FreeSimpleGUI as gui
 
+gui.theme('Black')
 label = gui.Text("Add your to do item")
 input_box = gui.InputText(key="input")
 add_button = gui.Button("Add")
@@ -14,14 +13,13 @@ window = gui.Window("To Do App",
 
 while True:
     event, values = window.read()
-
     match event:
         case "Add":
             if values['input'] != '':
                 f.write_items("a",values['input'] + "\n")
                 window["todo_items"].update(f.retrieve_items())
                 window["input"].update("")
-
+            window["Remove"].update(disabled=True)
         case "Remove":
             to_do_list = f.retrieve_items()
             to_do_list.remove(values['todo_items'][0])
