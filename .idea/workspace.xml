@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c966d51-cb87-42ae-bacb-6029b04d59ed" name="Changes" comment="Implement function to show to do list to user">
+    <list default="true" id="1c966d51-cb87-42ae-bacb-6029b04d59ed" name="Changes" comment="update gui add function to update to do list shown to user in real time">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/to_do_items.txt" beforeDir="false" afterPath="$PROJECT_DIR$/to_do_items.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1767903091556</updated>
       <workItem from="1767903092559" duration="41449000" />
-      <workItem from="1768671421882" duration="15851000" />
+      <workItem from="1768671421882" duration="23055000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -238,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768863618024</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update gui add function to update to do list shown to user in real time">
+      <option name="closed" value="true" />
+      <created>1768864247502</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1768864247502</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,10 +301,11 @@
     <MESSAGE value="start GUI component" />
     <MESSAGE value="implement add to do function to gui app" />
     <MESSAGE value="Implement function to show to do list to user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement function to show to do list to user" />
+    <MESSAGE value="update gui add function to update to do list shown to user in real time" />
+    <option name="LAST_COMMIT_MESSAGE" value="update gui add function to update to do list shown to user in real time" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ToDoApp$main.coverage" NAME="main Coverage Results" MODIFIED="1768595834146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ToDoApp$gui.coverage" NAME="gui Coverage Results" MODIFIED="1768863349888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ToDoApp$gui.coverage" NAME="gui Coverage Results" MODIFIED="1769049857809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
